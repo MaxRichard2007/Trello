@@ -1,1 +1,1 @@
-# Organizing Your _SASS_ Projects
+# How organizing your sass project
