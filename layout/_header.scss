@@ -1,0 +1,85 @@
+// Header
+
+.header-top-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  height: 30px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar-block {
+  width: 10.33%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.top-bar-block.left {
+  justify-content: flex-start;
+}
+
+.top-bar-logo {
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-form-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+#search-form {
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+#search-input {
+  background-color: rgba(255, 255, 255, 0.5);
+  float: left;
+  border: 0px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+#search-submit {
+  background-color: rgba(255, 255, 255, 0.5);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 15px 15px;
+  width: 30px;
+  border: 0px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.home-icon {
+  width: 25px;
+  display: inline-block;
+  float: left;
+  left: 0.6rem;
+  padding-right: 10px;
+  position: relative;
+}
+
+.profile-icon {
+  border-radius: 50%;
+  height: 30px;
+  top: 0.5rem;
+  position: relative;
+}
