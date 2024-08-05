@@ -13,6 +13,7 @@
   display: inline-flex;
   flex-direction: column;
   margin-right: 16px;
+  flex: 0 0 auto; 
 }
 
 h2.jobs-list-heading {
@@ -23,23 +24,22 @@ h2.jobs-list-heading {
 }
 
 .button {
-  background-color: transparent; /* رنگ پس‌زمینه شفاف */
-  border: 2px solid $green-light; /* رنگ سبز کم‌رنگ برای کناره‌ها */
-  color: $green-light; /* رنگ متن دکمه (اختیاری) */
-  padding: 10px 20px; /* فاصله داخلی دکمه */
-  font-size: 16px; /* اندازه فونت متن دکمه */
-  border-radius: 4px; /* گوشه‌های گرد دکمه (اختیاری) */
-  cursor: pointer; /* تغییر نشانگر موس هنگام قرار گرفتن بر روی دکمه */
-  transition: background-color 0.3s ease; /* افکت تغییر رنگ پس‌زمینه هنگام هاور */
+  background-color: transparent;
+  border: 2px solid $green-light;
+  color: $green-light;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
   left: 7rem;
   position: relative;
   border-radius: 5px;
 }
 
 .button:hover {
-  background-color: #e8f5e9; /* رنگ پس‌زمینه تغییر یافته هنگام هاور */
+  background-color: #e8f5e9;
 }
-
 
 .jobs-list-body {
   height: 400px;
@@ -128,3 +128,10 @@ li {
   color: $black-light;
   font-weight: 700;
 }
+
+.jobs-list-wrapper {
+  overflow-y: auto; 
+  display: flex;
+  flex-wrap: nowrap; 
+}
+
