@@ -22,6 +22,25 @@ h2.jobs-list-heading {
   margin-left: 9px;
 }
 
+.button {
+  background-color: transparent; /* رنگ پس‌زمینه شفاف */
+  border: 2px solid $green-light; /* رنگ سبز کم‌رنگ برای کناره‌ها */
+  color: $green-light; /* رنگ متن دکمه (اختیاری) */
+  padding: 10px 20px; /* فاصله داخلی دکمه */
+  font-size: 16px; /* اندازه فونت متن دکمه */
+  border-radius: 4px; /* گوشه‌های گرد دکمه (اختیاری) */
+  cursor: pointer; /* تغییر نشانگر موس هنگام قرار گرفتن بر روی دکمه */
+  transition: background-color 0.3s ease; /* افکت تغییر رنگ پس‌زمینه هنگام هاور */
+  left: 7rem;
+  position: relative;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #e8f5e9; /* رنگ پس‌زمینه تغییر یافته هنگام هاور */
+}
+
+
 .jobs-list-body {
   height: 400px;
   margin-right: 5px;
@@ -37,7 +56,9 @@ ul {
 }
 
 .jobs-list-footer {
-  height: 50px;
+  height: 5rem;
+  top: 5px;
+  position: relative;
 }
 
 li {
