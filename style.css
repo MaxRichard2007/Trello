@@ -95,4 +95,32 @@ body {
   position: relative;
 }
 
+.body-section {
+  padding-top: 40px;
+}
+
+.jobs-list {
+  width: 350px;
+  margin: 0 5px 30px 0px;
+  height: 100%;
+  vertical-align: top;
+  white-space: nowrap;
+  background-color: #e2e4e6;
+  border-radius: 5px;
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 16px;
+}
+
+h2.jobs-list-heading {
+  font-family: "Lato";
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 9px;
+}
+
+.jobs-list-footer {
+  height: 50px;
+}
+
 /*# sourceMappingURL=style.css.map */
