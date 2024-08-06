@@ -38,6 +38,13 @@
 
 /* small mobiles */
 @media (min-width: 321px) and (max-width: 480px) {
+  .search-form-wrapper {
+    display: none;
+  }
+
+  .top-bar-logo {
+    height: 2rem;
+  }
 }
 
 /* small tablets */
