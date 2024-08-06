@@ -152,7 +152,7 @@ body {
     height: 25px;
   }
   .jobs-list {
-    width: 27rem !important;
+    width: 26.5rem !important;
     height: 35rem !important;
   }
   .jobs-list-body {
@@ -160,11 +160,18 @@ body {
   }
   .createElement,
   .createBox {
-    left: 6rem;
+    left: 8rem;
     top: 3px;
     width: 11rem;
     height: 4rem;
     font-size: 16px;
+  }
+  .createBox {
+    left: 0;
+    width: 15rem;
+  }
+  .footer {
+    height: 7rem;
   }
 }
 /* small mobiles */
