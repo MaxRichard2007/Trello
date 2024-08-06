@@ -25,7 +25,7 @@ h2.jobs-list-heading {
 
 .button {
   background-color: transparent;
-  border: 2px solid $green-light;
+  border: 2px solid $green;
   color: $green-light;
   padding: 10px 20px;
   font-size: 16px;
@@ -38,7 +38,7 @@ h2.jobs-list-heading {
 }
 
 .button:hover {
-  background-color: #e8f5e9;
+  background-color: $SoftMint;
 }
 
 .jobs-list-body {
@@ -133,11 +133,4 @@ li {
   overflow-y: auto;
   display: flex;
   flex-wrap: nowrap;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20rem;
 }
