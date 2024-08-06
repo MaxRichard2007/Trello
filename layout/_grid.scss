@@ -1,5 +1,12 @@
 /* very small mobiles */
 @media (max-width: 320px) {
+    .search-form-wrapper {
+        display: none;
+    }
+
+    .top-bar-logo {
+        height: 25px;
+    }
 }
 
 /* small mobiles */
