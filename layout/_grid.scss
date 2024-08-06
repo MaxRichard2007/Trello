@@ -1,12 +1,30 @@
 /* very small mobiles */
 @media (max-width: 320px) {
-    .search-form-wrapper {
-        display: none;
-    }
+  .search-form-wrapper {
+    display: none;
+  }
 
-    .top-bar-logo {
-        height: 25px;
-    }
+  .top-bar-logo {
+    height: 25px;
+  }
+
+  .jobs-list {
+    width: 26rem !important;
+    height: 35rem !important;
+  }
+
+  .jobs-list-body {
+    height: 27rem !important;
+  }
+
+  .createElement,
+  .createBox {
+    left: 6rem;
+    top: 3px;
+    width: 11rem;
+    height: 4rem;
+    font-size: 16px;
+  }
 }
 
 /* small mobiles */
