@@ -182,6 +182,29 @@ body {
   .top-bar-logo {
     height: 2rem;
   }
+  .jobs-list {
+    height: 28rem !important;
+    width: 26.7rem !important;
+  }
+  .createElement {
+    width: 13rem;
+    height: 3.5rem;
+    top: -1rem;
+    font-size: 1.2rem;
+    font-weight: lighter;
+  }
+  .jobs-list-body {
+    height: 21rem;
+    margin-right: 5px;
+    margin-left: 9px;
+    overflow: auto;
+  }
+  .jobs-list-footer {
+    top: -0.5rem;
+  }
+  .new-jobs-list {
+    height: 20rem;
+  }
 }
 /* small tablets */
 /* big tablets */
