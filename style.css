@@ -211,6 +211,10 @@ body {
   .createBox {
     top: -1rem;
   }
+  .jobs-list-wrapper {
+    top: -2rem;
+    position: relative;
+  }
 }
 /* small tablets */
 /* big tablets */
