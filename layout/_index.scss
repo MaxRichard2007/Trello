@@ -13,7 +13,7 @@
   display: inline-flex;
   flex-direction: column;
   margin-right: 16px;
-  flex: 0 0 auto; 
+  flex: 0 0 auto;
 }
 
 h2.jobs-list-heading {
@@ -130,8 +130,14 @@ li {
 }
 
 .jobs-list-wrapper {
-  overflow-y: auto; 
+  overflow-y: auto;
   display: flex;
-  flex-wrap: nowrap; 
+  flex-wrap: nowrap;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+}
