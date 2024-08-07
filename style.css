@@ -217,6 +217,11 @@ body {
   }
 }
 /* small tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .search-form-wrapper {
+    display: none !important;
+  }
+}
 /* big tablets */
 /* small laptops and desktops */
 /* large desktops */
