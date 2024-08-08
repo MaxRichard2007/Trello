@@ -246,8 +246,12 @@ body {
 .body-section {
   padding-top: 40px;
 }
-
-.jobs-list {
+.body-section .jobs-list-wrapper {
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.body-section .jobs-list-wrapper .jobs-list {
   width: 350px;
   margin: 0 5px 30px 0px;
   height: 100%;
@@ -260,57 +264,28 @@ body {
   margin-right: 16px;
   flex: 0 0 auto;
 }
-
-h2.jobs-list-heading {
+.body-section .jobs-list-wrapper .jobs-list h2.jobs-list-heading {
   font-family: "Lato";
   font-size: 12px;
   font-weight: bold;
   margin-left: 9px;
 }
-
-.button {
-  background-color: transparent;
-  border: 2px solid #4caf50;
-  color: #61bd4f;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  left: 7rem;
-  position: relative;
-  border-radius: 5px;
-}
-
-.button:hover {
-  background-color: #e8f5e9;
-}
-
-.jobs-list-body {
+.body-section .jobs-list-wrapper .jobs-list .jobs-list-body {
   height: 400px;
   margin-right: 5px;
   margin-left: 9px;
   overflow: auto;
 }
-
-ul {
+.body-section .jobs-list-wrapper .jobs-list .jobs-list-body ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   height: 100%;
 }
-
-.jobs-list-footer {
-  height: 5rem;
-  top: 5px;
-  position: relative;
-}
-
-li {
+.body-section .jobs-list-wrapper .jobs-list .jobs-list-body ul li {
   list-style-type: none;
 }
-
-.job-block {
+.body-section .jobs-list-wrapper .jobs-list .jobs-list-body ul li .job-block {
   background-color: #fff;
   border-bottom: 1px solid #ccc;
   border-radius: 3px;
@@ -328,8 +303,7 @@ li {
   padding-bottom: 10px;
   padding-top: 10px;
 }
-
-.job-name-block {
+.body-section .jobs-list-wrapper .jobs-list .jobs-list-body ul li .job-block .job-name-block {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -338,18 +312,15 @@ li {
   align-content: center;
   margin-bottom: 15px;
 }
-
-.job-name {
+.body-section .jobs-list-wrapper .jobs-list .jobs-list-body ul li .job-block .job-name-block .job-name {
   font-family: "Lato";
   width: 100%;
 }
-
-.edit-job-icon {
+.body-section .jobs-list-wrapper .jobs-list .jobs-list-body ul li .job-block .job-name-block .edit-job-icon {
   width: 10px;
   height: 10px;
 }
-
-.job-info-block {
+.body-section .jobs-list-wrapper .jobs-list .jobs-list-body ul li .job-block .job-info-block {
   margin-top: 10px;
   display: flex;
   flex-direction: row;
@@ -358,8 +329,7 @@ li {
   align-items: center;
   align-content: center;
 }
-
-.job-date {
+.body-section .jobs-list-wrapper .jobs-list .jobs-list-body ul li .job-block .job-info-block .job-date {
   font-size: 10px;
   padding: 2px 8px 3px 8px;
   background-color: #61bd4f;
@@ -367,17 +337,15 @@ li {
   display: inline-block;
   border-radius: 5px;
 }
-
-.user-email {
+.body-section .jobs-list-wrapper .jobs-list .jobs-list-body ul li .job-block .job-info-block .user-email {
   font-size: 10px;
   color: rgba(0, 0, 0, 0.6);
   font-weight: 700;
 }
-
-.jobs-list-wrapper {
-  overflow-y: auto;
-  display: flex;
-  flex-wrap: nowrap;
+.body-section .jobs-list-wrapper .jobs-list .jobs-list-footer {
+  height: 5rem;
+  top: 5px;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
