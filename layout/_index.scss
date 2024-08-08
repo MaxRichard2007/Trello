@@ -23,23 +23,6 @@ h2.jobs-list-heading {
   margin-left: 9px;
 }
 
-.button {
-  background-color: transparent;
-  border: 2px solid $green;
-  color: $green-light;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  left: 7rem;
-  position: relative;
-  border-radius: 5px;
-}
-
-.button:hover {
-  background-color: $SoftMint;
-}
 
 .jobs-list-body {
   height: 400px;
