@@ -49,4 +49,20 @@ const header = () => {
 
   const profileIcon = document.createElement("i");
   profileIcon.classList.add("fa-solid", "fa-user", "profile-icon");
+
+  // Append Childs
+  document.body.appendChild(headerSection);
+  headerSection.appendChild(headerTopBar);
+  headerTopBar.appendChild(topBarBlockLeft);
+  topBarBlockLeft.appendChild(homeIconBlock);
+  homeIconBlock.innerHTML = '<i class="fa-solid fa-house home-icon"></i>';
+  headerTopBar.appendChild(topBarBlockCenter);
+  headerTopBar.appendChild(topBarBlockRight);
+
+  topBarBlockLeft.appendChild(searchFormWrapper);
+  searchFormWrapper.appendChild(searchForm);
+
+  searchForm.appendChild(searchSubmit);
 };
+
+header();
