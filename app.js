@@ -65,4 +65,23 @@ const header = () => {
   searchForm.appendChild(searchSubmit);
 };
 
+// BodySection
+
+const BodySection = () => {
+  const bodySection = document.createElement("div");
+  bodySection.classList.add("body-section");
+
+  const jobListWrapper = document.createElement("div");
+  jobListWrapper.classList.add("jobs-list-wrapper");
+
+  const jobList = document.createElement("div");
+  jobList.classList.add("jobs-list");
+
+  // Append Childs
+  document.body.appendChild(bodySection);
+  bodySection.appendChild(jobListWrapper);
+  jobListWrapper.appendChild(jobList);
+};
+
 header();
+BodySection();
