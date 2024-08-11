@@ -66,7 +66,6 @@ const header = () => {
 };
 
 // BodySection
-
 const BodySection = () => {
   const bodySection = document.createElement("div");
   bodySection.classList.add("body-section");
@@ -147,5 +146,24 @@ const BodySection = () => {
   createElementBtn.appendChild(plusIcon);
 };
 
+// FOOTER
+
+const footer = () => {
+  const footer = document.createElement("div");
+  footer.classList.add("footer");
+
+  const button = document.createElement("button");
+  button.classList.add("createBox");
+  button.innerHTML = "Create Box";
+
+  const plusButton = document.createElement("i");
+  plusButton.classList.add("fa-solid", "fa-plus");
+
+  document.body.appendChild(footer);
+  footer.appendChild(button);
+  button.appendChild(plusButton);
+};
+
 header();
 BodySection();
+footer();
