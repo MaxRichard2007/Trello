@@ -113,8 +113,10 @@ const BodySection = () => {
   const jobDate = document.createElement("div");
   jobDate.classList.add("job-date");
   jobDate.innerHTML = "19 june";
+
   const userEmail = document.createElement("div");
   userEmail.classList.add("user-email");
+  userEmail.innerHTML = "max536854@gmail.com";
 
   // Append Childs
   document.body.appendChild(bodySection);
