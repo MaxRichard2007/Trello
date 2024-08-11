@@ -77,8 +77,6 @@ const BodySection = () => {
   const jobList = document.createElement("div");
   jobList.classList.add("jobs-list");
 
-  // از اینجا کد جدید هستش
-
   const jobsListHeading = document.createElement("div");
   jobsListHeading.classList.add("jobs-list-heading");
 
@@ -96,7 +94,7 @@ const BodySection = () => {
 
   const jobBlock = document.createElement("div");
   jobBlock.classList.add("job-block");
-  jobBlock.setAttribute('draggable', 'true')
+  jobBlock.setAttribute("draggable", "true");
 
   const jobNameBlock = document.createElement("div");
   jobNameBlock.classList.add("job-name-block");
@@ -124,7 +122,6 @@ const BodySection = () => {
   bodySection.appendChild(jobListWrapper);
   jobListWrapper.appendChild(jobList);
 
-  // اینجا هم کد جدید هستش
   jobList.appendChild(h2);
   jobList.appendChild(jobsListHeading);
   jobsListHeading.appendChild(jobsListBody);
