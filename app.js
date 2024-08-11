@@ -77,10 +77,61 @@ const BodySection = () => {
   const jobList = document.createElement("div");
   jobList.classList.add("jobs-list");
 
+  // از اینجا کد جدید هستش
+
+  const jobsListHeading = document.createElement("div");
+  jobsListHeading.classList.add("jobs-list-heading");
+
+  const h2 = document.createElement("h2");
+  h2.classList.add("jobs-list-wrapper");
+  h2.innerHTML = "New Jobs";
+
+  const jobsListBody = document.createElement("div");
+  jobsListBody.classList.add("jobs-list-body");
+
+  const newJobsList = document.createElement("ul");
+  newJobsList.classList.add("new-jobs-list");
+
+  const li = document.createElement("li");
+
+  const jobBlock = document.createElement("div");
+  jobBlock.classList.add("job-block");
+
+  const jobNameBlock = document.createElement("div");
+  jobNameBlock.classList.add("job-name-block");
+  jobNameBlock.innerHTML = "Artiste Logo";
+
+  const jobName = document.createElement("div");
+  jobName.classList.add("job-name");
+
+  const jobEdit = document.createElement("div");
+  jobEdit.classList.add("job-edit");
+
+  const jobInfoBlock = document.createElement("div");
+  jobInfoBlock.classList.add("job-info-block");
+
+  const jobDate = document.createElement("div");
+  jobDate.classList.add("job-date");
+  jobDate.innerHTML = "19 june";
+  const userEmail = document.createElement("div");
+  userEmail.classList.add("user-email");
+
   // Append Childs
   document.body.appendChild(bodySection);
   bodySection.appendChild(jobListWrapper);
   jobListWrapper.appendChild(jobList);
+
+  // اینجا هم کد جدید هستش
+  jobList.appendChild(h2);
+  jobList.appendChild(jobsListHeading);
+  jobsListHeading.appendChild(jobsListBody);
+  jobsListBody.appendChild(newJobsList);
+  newJobsList.appendChild(li);
+  li.appendChild(jobBlock);
+  jobBlock.appendChild(jobNameBlock);
+  jobBlock.appendChild(jobInfoBlock);
+  jobInfoBlock.appendChild(jobDate);
+  jobInfoBlock.appendChild(userEmail);
 };
 
 header();
