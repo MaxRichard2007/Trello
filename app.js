@@ -96,6 +96,7 @@ const BodySection = () => {
 
   const jobBlock = document.createElement("div");
   jobBlock.classList.add("job-block");
+  jobBlock.setAttribute('draggable', 'true')
 
   const jobNameBlock = document.createElement("div");
   jobNameBlock.classList.add("job-name-block");
