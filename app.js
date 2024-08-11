@@ -117,11 +117,21 @@ const BodySection = () => {
   userEmail.classList.add("user-email");
   userEmail.innerHTML = "max536854@gmail.com";
 
+  const jobsListFooter = document.createElement("div");
+  jobsListFooter.classList.add("jobs-list-footer");
+
+  const createElementBtn = document.createElement("button");
+  createElementBtn.setAttribute("role", "button");
+  createElementBtn.classList.add("createElement");
+  createElementBtn.innerHTML = "Create Element";
+
+  const plusIcon = document.createElement("i");
+  plusIcon.classList.add("fa-solid", "fa-plus");
+
   // Append Childs
   document.body.appendChild(bodySection);
   bodySection.appendChild(jobListWrapper);
   jobListWrapper.appendChild(jobList);
-
   jobList.appendChild(h2);
   jobList.appendChild(jobsListHeading);
   jobsListHeading.appendChild(jobsListBody);
@@ -132,6 +142,9 @@ const BodySection = () => {
   jobBlock.appendChild(jobInfoBlock);
   jobInfoBlock.appendChild(jobDate);
   jobInfoBlock.appendChild(userEmail);
+  jobList.appendChild(jobsListFooter);
+  jobsListFooter.appendChild(createElementBtn);
+  createElementBtn.appendChild(plusIcon);
 };
 
 header();
