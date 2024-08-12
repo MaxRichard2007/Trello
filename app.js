@@ -131,6 +131,7 @@ const BodySection = () => {
   createElementBtn.setAttribute("role", "button");
   createElementBtn.classList.add("createElement");
   createElementBtn.innerHTML = "Create Element";
+  createElementBtn.addEventListener("click", createJobBlock);
 
   const plusIcon = document.createElement("i");
   plusIcon.classList.add("fa-solid", "fa-plus");
