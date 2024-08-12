@@ -91,30 +91,38 @@ const BodySection = () => {
 
   const li = document.createElement("li");
 
-  const jobBlock = document.createElement("div");
-  jobBlock.classList.add("job-block");
-  jobBlock.setAttribute("draggable", "true");
+  const createJobBlock = () => {
+    const jobBlock = document.createElement("div");
+    jobBlock.classList.add("job-block");
+    jobBlock.setAttribute("draggable", "true");
 
-  const jobNameBlock = document.createElement("div");
-  jobNameBlock.classList.add("job-name-block");
-  jobNameBlock.innerHTML = "Artiste Logo";
+    const jobNameBlock = document.createElement("div");
+    jobNameBlock.classList.add("job-name-block");
+    jobNameBlock.innerHTML = "Artiste Logo";
 
-  const jobName = document.createElement("div");
-  jobName.classList.add("job-name");
+    const jobName = document.createElement("div");
+    jobName.classList.add("job-name");
 
-  const jobEdit = document.createElement("div");
-  jobEdit.classList.add("job-edit");
+    const jobEdit = document.createElement("div");
+    jobEdit.classList.add("job-edit");
 
-  const jobInfoBlock = document.createElement("div");
-  jobInfoBlock.classList.add("job-info-block");
+    const jobInfoBlock = document.createElement("div");
+    jobInfoBlock.classList.add("job-info-block");
 
-  const jobDate = document.createElement("div");
-  jobDate.classList.add("job-date");
-  jobDate.innerHTML = "19 june";
+    const jobDate = document.createElement("div");
+    jobDate.classList.add("job-date");
+    jobDate.innerHTML = "19 june";
 
-  const userEmail = document.createElement("div");
-  userEmail.classList.add("user-email");
-  userEmail.innerHTML = "max536854@gmail.com";
+    const userEmail = document.createElement("div");
+    userEmail.classList.add("user-email");
+    userEmail.innerHTML = "max536854@gmail.com";
+
+    li.appendChild(jobBlock);
+    jobBlock.appendChild(jobNameBlock);
+    jobBlock.appendChild(jobInfoBlock);
+    jobInfoBlock.appendChild(jobDate);
+    jobInfoBlock.appendChild(userEmail);
+  };
 
   const jobsListFooter = document.createElement("div");
   jobsListFooter.classList.add("jobs-list-footer");
@@ -136,18 +144,13 @@ const BodySection = () => {
   jobsListHeading.appendChild(jobsListBody);
   jobsListBody.appendChild(newJobsList);
   newJobsList.appendChild(li);
-  li.appendChild(jobBlock);
-  jobBlock.appendChild(jobNameBlock);
-  jobBlock.appendChild(jobInfoBlock);
-  jobInfoBlock.appendChild(jobDate);
-  jobInfoBlock.appendChild(userEmail);
   jobList.appendChild(jobsListFooter);
   jobsListFooter.appendChild(createElementBtn);
   createElementBtn.appendChild(plusIcon);
+  createJobBlock();
 };
 
 // FOOTER
-
 const footer = () => {
   const footer = document.createElement("div");
   footer.classList.add("footer");
