@@ -151,25 +151,27 @@ const BodySection = () => {
   // Append Childs
   document.body.appendChild(bodySection);
   bodySection.appendChild(jobListWrapper);
-};
 
-// FOOTER
-const footer = () => {
-  const footer = document.createElement("div");
-  footer.classList.add("footer");
+  // FOOTER
+  const footer = () => {
+    const footer = document.createElement("div");
+    footer.classList.add("footer");
 
-  const button = document.createElement("button");
-  button.classList.add("createBox");
-  button.innerHTML = "Create Box";
+    const button = document.createElement("button");
+    button.classList.add("createBox");
+    button.innerHTML = "Create Box";
+    button.addEventListener("click", NewJobsBox);
 
-  const plusButton = document.createElement("i");
-  plusButton.classList.add("fa-solid", "fa-plus");
+    const plusButton = document.createElement("i");
+    plusButton.classList.add("fa-solid", "fa-plus");
 
-  document.body.appendChild(footer);
-  footer.appendChild(button);
-  button.appendChild(plusButton);
+    document.body.appendChild(footer);
+    footer.appendChild(button);
+    button.appendChild(plusButton);
+  };
+
+  footer();
 };
 
 header();
 BodySection();
-footer();
