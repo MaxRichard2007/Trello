@@ -73,82 +73,84 @@ const BodySection = () => {
   const jobListWrapper = document.createElement("div");
   jobListWrapper.classList.add("jobs-list-wrapper");
 
-  const jobList = document.createElement("div");
-  jobList.classList.add("jobs-list");
+  const NewJobsBox = () => {
+    const jobList = document.createElement("div");
+    jobList.classList.add("jobs-list");
 
-  const jobsListHeading = document.createElement("div");
-  jobsListHeading.classList.add("jobs-list-heading");
+    const jobsListHeading = document.createElement("div");
+    jobsListHeading.classList.add("jobs-list-heading");
 
-  const h2 = document.createElement("h2");
-  h2.classList.add("jobs-list-wrapper");
-  h2.innerHTML = "New Jobs";
+    const h2 = document.createElement("h2");
+    h2.classList.add("jobs-list-wrapper");
+    h2.innerHTML = "New Jobs";
 
-  const jobsListBody = document.createElement("div");
-  jobsListBody.classList.add("jobs-list-body");
+    const jobsListBody = document.createElement("div");
+    jobsListBody.classList.add("jobs-list-body");
 
-  const newJobsList = document.createElement("ul");
-  newJobsList.classList.add("new-jobs-list");
+    const newJobsList = document.createElement("ul");
+    newJobsList.classList.add("new-jobs-list");
 
-  const li = document.createElement("li");
+    const li = document.createElement("li");
 
-  const createJobBlock = () => {
-    const jobBlock = document.createElement("div");
-    jobBlock.classList.add("job-block");
-    jobBlock.setAttribute("draggable", "true");
+    const createJobBlock = () => {
+      const jobBlock = document.createElement("div");
+      jobBlock.classList.add("job-block");
+      jobBlock.setAttribute("draggable", "true");
 
-    const jobNameBlock = document.createElement("div");
-    jobNameBlock.classList.add("job-name-block");
-    jobNameBlock.innerHTML = "Artiste Logo";
+      const jobNameBlock = document.createElement("div");
+      jobNameBlock.classList.add("job-name-block");
+      jobNameBlock.innerHTML = "Artiste Logo";
 
-    const jobName = document.createElement("div");
-    jobName.classList.add("job-name");
+      const jobName = document.createElement("div");
+      jobName.classList.add("job-name");
 
-    const jobEdit = document.createElement("div");
-    jobEdit.classList.add("job-edit");
+      const jobEdit = document.createElement("div");
+      jobEdit.classList.add("job-edit");
 
-    const jobInfoBlock = document.createElement("div");
-    jobInfoBlock.classList.add("job-info-block");
+      const jobInfoBlock = document.createElement("div");
+      jobInfoBlock.classList.add("job-info-block");
 
-    const jobDate = document.createElement("div");
-    jobDate.classList.add("job-date");
-    jobDate.innerHTML = "19 june";
+      const jobDate = document.createElement("div");
+      jobDate.classList.add("job-date");
+      jobDate.innerHTML = "19 june";
 
-    const userEmail = document.createElement("div");
-    userEmail.classList.add("user-email");
-    userEmail.innerHTML = "max536854@gmail.com";
+      const userEmail = document.createElement("div");
+      userEmail.classList.add("user-email");
+      userEmail.innerHTML = "max536854@gmail.com";
 
-    li.appendChild(jobBlock);
-    jobBlock.appendChild(jobNameBlock);
-    jobBlock.appendChild(jobInfoBlock);
-    jobInfoBlock.appendChild(jobDate);
-    jobInfoBlock.appendChild(userEmail);
+      li.appendChild(jobBlock);
+      jobBlock.appendChild(jobNameBlock);
+      jobBlock.appendChild(jobInfoBlock);
+      jobInfoBlock.appendChild(jobDate);
+      jobInfoBlock.appendChild(userEmail);
+    };
+
+    const jobsListFooter = document.createElement("div");
+    jobsListFooter.classList.add("jobs-list-footer");
+
+    const createElementBtn = document.createElement("button");
+    createElementBtn.setAttribute("role", "button");
+    createElementBtn.classList.add("createElement");
+    createElementBtn.innerHTML = "Create Element";
+    createElementBtn.addEventListener("click", createJobBlock);
+
+    const plusIcon = document.createElement("i");
+    plusIcon.classList.add("fa-solid", "fa-plus");
+
+    jobListWrapper.appendChild(jobList);
+    jobList.appendChild(h2);
+    jobList.appendChild(jobsListHeading);
+    jobsListHeading.appendChild(jobsListBody);
+    jobsListBody.appendChild(newJobsList);
+    newJobsList.appendChild(li);
+    jobList.appendChild(jobsListFooter);
+    jobsListFooter.appendChild(createElementBtn);
+    createElementBtn.appendChild(plusIcon);
   };
-
-  const jobsListFooter = document.createElement("div");
-  jobsListFooter.classList.add("jobs-list-footer");
-
-  const createElementBtn = document.createElement("button");
-  createElementBtn.setAttribute("role", "button");
-  createElementBtn.classList.add("createElement");
-  createElementBtn.innerHTML = "Create Element";
-  createElementBtn.addEventListener("click", createJobBlock);
-
-  const plusIcon = document.createElement("i");
-  plusIcon.classList.add("fa-solid", "fa-plus");
 
   // Append Childs
   document.body.appendChild(bodySection);
   bodySection.appendChild(jobListWrapper);
-  jobListWrapper.appendChild(jobList);
-  jobList.appendChild(h2);
-  jobList.appendChild(jobsListHeading);
-  jobsListHeading.appendChild(jobsListBody);
-  jobsListBody.appendChild(newJobsList);
-  newJobsList.appendChild(li);
-  jobList.appendChild(jobsListFooter);
-  jobsListFooter.appendChild(createElementBtn);
-  createElementBtn.appendChild(plusIcon);
-  createJobBlock();
 };
 
 // FOOTER
