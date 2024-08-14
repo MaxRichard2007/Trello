@@ -124,6 +124,22 @@ const BodySection = () => {
       jobBlock.appendChild(jobInfoBlock);
       jobInfoBlock.appendChild(jobDate);
       jobInfoBlock.appendChild(userEmail);
+
+      jobBlock.addEventListener("dragstart", () => {
+        jobBlock.classList.add("dragging");
+      });
+
+      jobBlock.addEventListener("dragend", () => {
+        jobBlock.classList.remove("dragging");
+      });
+
+      li.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        const deaggedElement = document.querySelector(".dragging");
+        if (deaggedElement && li !== deaggedElement.parentNode) {
+          li.appendChild(deaggedElement);
+        }
+      });
     };
 
     createJobBlock();
