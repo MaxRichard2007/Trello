@@ -125,6 +125,8 @@ const BodySection = () => {
       jobInfoBlock.appendChild(userEmail);
     };
 
+    createJobBlock()
+
     const jobsListFooter = document.createElement("div");
     jobsListFooter.classList.add("jobs-list-footer");
 
@@ -147,6 +149,8 @@ const BodySection = () => {
     jobsListFooter.appendChild(createElementBtn);
     createElementBtn.appendChild(plusIcon);
   };
+
+  Array.from({ length: 5 }, NewJobsBox);
 
   // Append Childs
   document.body.appendChild(bodySection);
