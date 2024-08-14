@@ -69,6 +69,16 @@ body {
   background-color: #e8f5e9;
 }
 
+.dragging {
+  opacity: 0.5;
+  cursor: grabbing;
+  transition: opacity 0.2s ease-out;
+}
+
+li {
+  height: 33rem;
+}
+
 .header-top-bar {
   display: flex;
   flex-direction: row;

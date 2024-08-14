@@ -1,0 +1,9 @@
+.dragging {
+  opacity: 0.5;
+  cursor: grabbing;
+  transition: opacity 0.2s ease-out;
+}
+
+li {
+  height: 33rem;
+}
