@@ -91,6 +91,7 @@ const BodySection = () => {
     newJobsList.classList.add("new-jobs-list");
 
     const li = document.createElement("li");
+    newJobsList.appendChild(li);
 
     const createJobBlock = () => {
       const jobBlock = document.createElement("div");
@@ -125,7 +126,7 @@ const BodySection = () => {
       jobInfoBlock.appendChild(userEmail);
     };
 
-    createJobBlock()
+    createJobBlock();
 
     const jobsListFooter = document.createElement("div");
     jobsListFooter.classList.add("jobs-list-footer");
@@ -144,7 +145,6 @@ const BodySection = () => {
     jobList.appendChild(jobsListHeading);
     jobsListHeading.appendChild(jobsListBody);
     jobsListBody.appendChild(newJobsList);
-    newJobsList.appendChild(li);
     jobList.appendChild(jobsListFooter);
     jobsListFooter.appendChild(createElementBtn);
     createElementBtn.appendChild(plusIcon);
