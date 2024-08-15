@@ -140,6 +140,23 @@ const BodySection = () => {
           li.appendChild(deaggedElement);
         }
       });
+
+      // Double click to edit
+      jobBlock.addEventListener("dblclick", () => {
+        const newJobName = prompt(
+          "Enter new job name:",
+          jobNameBlock.innerHTML
+        );
+        const newJobDate = prompt("Enter new job date:", jobDate.innerHTML);
+        const newUserEmail = prompt(
+          "Enter new user email:",
+          userEmail.innerHTML
+        );
+
+        if (newJobName !== null) jobNameBlock.innerHTML = newJobName;
+        if (newJobDate !== null) jobDate.innerHTML = newJobDate;
+        if (newUserEmail !== null) userEmail.innerHTML = newUserEmail;
+      });
     };
 
     createJobBlock();
