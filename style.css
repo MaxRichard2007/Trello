@@ -154,6 +154,7 @@ li {
   left: 0.6rem;
   padding-right: 10px;
   position: relative;
+  cursor: pointer;
 }
 
 .profile-icon {
@@ -161,6 +162,7 @@ li {
   height: 30px;
   top: 0.5rem;
   position: relative;
+  cursor: pointer;
 }
 
 .footer {
@@ -221,10 +223,13 @@ li {
     font-weight: lighter;
   }
   .jobs-list-body {
-    height: 21rem;
-    margin-right: 5px;
-    margin-left: 9px;
-    overflow: auto;
+    height: 22rem !important;
+    margin-right: 5px !important;
+    margin-left: 9px !important;
+    overflow: auto !important;
+  }
+  .jobs-list-wrapper {
+    display: none;
   }
   .jobs-list-footer {
     top: -0.5rem;
@@ -247,6 +252,9 @@ li {
 @media (min-width: 481px) and (max-width: 768px) {
   .search-form-wrapper {
     display: none !important;
+  }
+  .footer {
+    height: 10rem;
   }
 }
 /* big tablets */

@@ -59,10 +59,14 @@
     font-weight: lighter;
   }
   .jobs-list-body {
-    height: 21rem;
-    margin-right: 5px;
-    margin-left: 9px;
-    overflow: auto;
+    height: 22rem !important;
+    margin-right: 5px !important;
+    margin-left: 9px !important;
+    overflow: auto !important;
+  }
+
+  .jobs-list-wrapper {
+    display: none;
   }
 
   .jobs-list-footer {
@@ -91,6 +95,10 @@
 @media (min-width: 481px) and (max-width: 768px) {
   .search-form-wrapper {
     display: none !important;
+  }
+
+  .footer {
+    height: 10rem;
   }
 }
 
