@@ -16,7 +16,7 @@ const header = () => {
   homeIcon.classList.add("fa-solid", "fa-house", "home-icon");
 
   const searchFormWrapper = document.createElement("div");
-  searchFormWrapper.classList.add("search-from-wrapper");
+  searchFormWrapper.classList.add("search-form-wrapper");
 
   const searchForm = document.createElement("form");
   searchForm.id = "search-form";
